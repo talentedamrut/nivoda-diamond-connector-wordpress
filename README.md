@@ -93,7 +93,7 @@ Click **Save Changes**
 ```php
 Diamond Search: [nivoda_search]
 
-Single Diamond: [nivoda_diamond id="DIAMOND_ID"]```
+Single Diamond: [nivoda_diamond id="DIAMOND_ID"]
 
 
 
