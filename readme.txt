@@ -1,97 +1,108 @@
-=== Nivoda Diamond Connector ===
+=== Nivoda API Integration ===
 Contributors: talentedamrut
-Tags: diamonds, nivoda, woocommerce, jewelry, ecommerce
+Tags: nivoda, diamonds, api, e-commerce, inventory
 Requires at least: 5.8
-Tested up to: 6.4
-Requires PHP: 7.4
+Tested up to: 6.9
 Stable tag: 1.0.0
+Requires PHP: 7.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Professional WordPress plugin integrating Nivoda diamond API with WooCommerce for advanced diamond search and e-commerce.
+Professional WordPress plugin for integrating Nivoda GraphQL API - search diamonds, display inventory, and manage jewelry products.
 
 == Description ==
 
-Nivoda Diamond Connector seamlessly integrates the Nivoda diamond API with your WordPress WooCommerce store, providing a complete solution for selling diamonds online.
+The Nivoda API Integration plugin provides a complete integration with the Nivoda GraphQL API, enabling WordPress websites to search and display diamond inventory with advanced filtering capabilities.
 
-= Key Features =
+= Features =
 
-* **Complete Nivoda API Integration** - Full GraphQL API wrapper with authentication and error handling
-* **Advanced Search Interface** - Interactive filters for shape, carat, color, clarity, cut, and price
-* **WooCommerce Integration** - Direct add-to-cart functionality with automatic product creation
-* **Performance Optimized** - WordPress transients caching layer with configurable duration
-* **Admin Tools** - Settings page, cache management, diamond sync, and API diagnostics
-* **Custom Post Type** - Optional local diamond storage with taxonomies
-* **Responsive Design** - Mobile-friendly interface with modern UI components
+* Advanced diamond search with multiple filters
+* Responsive and mobile-friendly design
+* Easy-to-use shortcodes
+* REST API endpoints for developers
+* Admin dashboard for settings and search
+* Support for images and 360° videos
+* Order creation capabilities
+* Hold management features
 
-= Requirements =
+= Shortcode Usage =
 
-* WordPress 5.8+
-* PHP 7.4+
-* WooCommerce 5.0+
-* Nivoda API account
+`[nivoda_search]` - Display complete diamond search interface
+`[nivoda_search shapes="ROUND,PRINCESS" labgrown="false" limit="20"]` - Display filtered search
 
-= Usage =
+= API Endpoints =
 
-After installation and configuration:
-
-1. Add `[nivoda_search]` shortcode to display the diamond search interface
-2. Add `[nivoda_diamond id="DIAMOND_ID"]` to show a specific diamond
-3. Configure markup pricing in settings
-4. Manage cache and sync diamonds via admin tools
+* GET /wp-json/nivoda/v1/search - Search diamonds
+* POST /wp-json/nivoda/v1/order - Create order (requires auth)
+* POST /wp-json/nivoda/v1/hold - Create hold (requires auth)
 
 == Installation ==
 
-1. Upload the plugin files to `/wp-content/plugins/nivoda-diamond-connector/`
+1. Upload the plugin files to `/wp-content/plugins/nivoda-api-integration`
 2. Activate the plugin through the 'Plugins' screen in WordPress
-3. Navigate to Nivoda Diamonds → Settings
-4. Enter your Nivoda API key
-5. Configure markup percentage and caching options
-6. Test the API connection
+3. Go to Nivoda API > Settings to configure your credentials
+4. Test your connection
+5. Use shortcodes or REST API to display diamonds
 
 == Frequently Asked Questions ==
 
 = Do I need a Nivoda account? =
 
-Yes, you need an active Nivoda account with API access to use this plugin.
+Yes, you need an active Nivoda account with API access. You can sign up at Nivoda.net for diamond inventory access.
 
-= Is WooCommerce required? =
+= How do I get API credentials? =
 
-Yes, WooCommerce is required for the shopping cart and checkout functionality.
+For production, use your Nivoda platform credentials. For staging/testing, contact tech@nivoda.net for access.
 
-= How does caching work? =
+= Can I customize the design? =
 
-The plugin uses WordPress transients to cache API responses. You can configure the cache duration in settings and clear cache anytime from the Tools page.
+Yes, you can override the plugin CSS with your theme's custom styles. All elements have CSS classes for easy customization.
 
-= Can I customize the appearance? =
+= Is this plugin free? =
 
-Yes, you can override the plugin's CSS in your theme or copy template files to your theme folder for complete customization.
+Yes, this plugin is completely free and open source under GPL v2+ license.
 
-= How do I get support? =
+= What are the system requirements? =
 
-Visit the plugin support forum or contact us at support@yourwebsite.com
+* WordPress 5.8 or higher
+* PHP 7.4 or higher  
+* Active internet connection for API access
+* Valid Nivoda API credentials
+
+= Does this work with my theme? =
+
+Yes, the plugin is designed to work with any properly coded WordPress theme. It uses standard WordPress hooks and filters.
+
+= Can I use this on multisite? =
+
+The plugin works on multisite installations but requires individual configuration per site.
 
 == Screenshots ==
 
-1. Diamond search interface with advanced filters
-2. Diamond detail page with specifications
-3. Admin settings page
-4. Admin tools and diagnostics
-5. WooCommerce cart integration
+1. Admin settings page for API configuration and testing
+2. Diamond search interface with advanced filters
+3. Search results with responsive grid layout and diamond details
+4. Admin search page for backend diamond management
 
 == Changelog ==
 
 = 1.0.0 =
 * Initial release
-* Nivoda GraphQL API integration
-* Advanced diamond search with filters
-* WooCommerce integration
-* Caching layer with transients
-* Admin tools and diagnostics
-* Custom Post Type support
-* Responsive UI with sliders and carousel
+* Diamond search functionality with advanced filters
+* REST API endpoints for integration
+* Admin settings and search interface
+* Shortcode support for frontend display
+* Order and hold creation capabilities
+* Mobile-responsive design
+* WordPress 6.4 compatibility
 
 == Upgrade Notice ==
 
 = 1.0.0 =
-Initial release of Nivoda Diamond Connector.
+Initial release of the Nivoda API Integration plugin.
+
+== Documentation ==
+
+For complete documentation, visit: https://bitbucket.org/nivoda/nivoda-api/
+
+For support, contact: talented.amrut@gmail.com
