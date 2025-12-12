@@ -1,0 +1,54 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Nivoda API Integration 1.0.0\n"
+"Report-Msgid-Bugs-To: tech@nivoda.net\n"
+"POT-Creation-Date: 2025-12-12 12:00+0000\n" 
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: admin/class-nivoda-admin.php:43
+msgid "Nivoda API Settings"
+msgstr ""
+
+#: admin/class-nivoda-admin.php:44
+msgid "Nivoda API"
+msgstr ""
+
+#: admin/class-nivoda-admin.php:109
+msgid "Configure your Nivoda API credentials. For production, use your Nivoda platform credentials. For staging, request credentials from tech@nivoda.net"
+msgstr ""
+
+#: admin/class-nivoda-admin.php:115
+msgid "Staging"
+msgstr ""
+
+#: admin/class-nivoda-admin.php:116
+msgid "Production"
+msgstr ""
+
+#: admin/class-nivoda-admin.php:118
+msgid "Select the API environment"
+msgstr ""
+
+#: admin/class-nivoda-admin.php:125
+msgid "Your Nivoda API username"
+msgstr ""
+
+#: admin/class-nivoda-admin.php:133
+msgid "Your Nivoda API password"
+msgstr ""
+
+#: includes/class-nivoda-api-client.php:29
+msgid "Nivoda API credentials not configured"
+msgstr ""
